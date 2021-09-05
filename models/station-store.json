@@ -1,36 +1,49 @@
 {
-  "playlistCollection": [
+  "stationCollection": [
     {
-      "title": "Beethoven Sonatas",
-      "songs": [
+      "id" : "01",
+      "name": "Tramore",
+      "readings": [
         {
-          "title": "Piano Sonata No. 3",
-          "artist": "Beethoven"
+          "id" : "02",
+          "code": 800,
+          "temperature": 0.5,
+          "windSpeed": 3.5,
+          "pressure": 1002
         },
         {
-          "title": "Piano Sonata No. 7",
-          "artist": "Beethoven"
+          "id" : "03",
+          "code": 600,
+          "temperature": 6,
+          "windSpeed": 2,
+          "pressure": 1004
         },
         {
-          "title": "Piano Sonata No. 10",
-          "artist": "Beethoven"
+          "id" : "04",
+          "code": 700,
+          "temperature": 8,
+          "windSpeed": 1,
+          "pressure": 1005
         }
       ]
     },
     {
-      "title": "Beethoven Concertos",
-      "songs": [
+      "id" : "05",
+      "name": "Dunmore",
+      "readings": [
         {
-          "title": "Piano Concerto No. 0",
-          "artist": "Beethoven"
+          "id" : "06",
+          "code": 700,
+          "temperature": 8,
+          "windSpeed": 1,
+          "pressure": 999
         },
         {
-          "title": "Piano Concerto No. 4",
-          "artist": "Beethoven"
-        },
-        {
-          "title": "Piano Concerto No. 6",
-          "artist": "Beethoven"
+          "id" : "07",
+          "code": 200,
+          "temperature": 0.5,
+          "windSpeed": 3.5,
+          "pressure": 1000
         }
       ]
     }
