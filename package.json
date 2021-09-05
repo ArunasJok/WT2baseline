@@ -1,7 +1,7 @@
 {
-  "name": "playlist-1",
+  "name": "baseline",
   "version": "0.0.1",
-  "description": "Playist 1 Features",
+  "description": "Weathertop2 baseline",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
