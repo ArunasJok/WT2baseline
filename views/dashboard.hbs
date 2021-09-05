@@ -1,25 +1,33 @@
 {{> menu id="dashboard"}}
 
-{{#each playlists}}
+{{#each stations}}
   <section class="ui segment">
     <h2 class="ui header">
-      {{title}}
+      {{name}}
     </h2>
     <table class="ui table">
       <thead>
         <tr>
-          <th>Song</th>
-          <th>Artist</th>
+          <th>Weather</th>
+          <th>Temp</th>
+          <th>Wind</th>
+          <th>Pressure</th>
         </tr>
       </thead>
       <tbody>
-        {{#each songs}}
-          <tr>
+        {{#each readings}}
+          <tr>            
             <td>
-              {{title}}
+              {{code}}
             </td>
             <td>
-              {{artist}}
+              {{temperature}}
+            </td>
+            <td>
+              {{windSpeed}}
+            </td>
+            <td>
+              {{pressure}}
             </td>
           </tr>
         {{/each}}

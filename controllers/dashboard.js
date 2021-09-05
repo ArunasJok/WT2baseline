@@ -8,7 +8,7 @@ const dashboard = {
     logger.info("dashboard rendering");
     const viewData = {
       title: "Station Dashboard",
-      playlists: stationCollection
+      stations: stationCollection
     };
     logger.info("about to render", stationCollection);
     response.render("dashboard", viewData);

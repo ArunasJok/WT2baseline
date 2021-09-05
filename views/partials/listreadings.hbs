@@ -1,18 +1,18 @@
 <table class="ui table">
   <thead>
     <tr>
-      <th>Dunmore</th>
-      <th>Artist</th>
+      <th>Name</th>
+      <th>Readings</th>
     </tr>
   </thead>
   <tbody>
-    {{#each playlist.songs}}
+    {{#each station.readings}}
       <tr>
         <td>
-          {{title}}
+          {{name}}
         </td>
         <td>
-          {{artist}}
+          {{readings}}
         </td>
       </tr>
     {{/each}}
