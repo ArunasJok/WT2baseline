@@ -1,51 +1,87 @@
 {
   "stationCollection": [
     {
-      "id" : "01",
+      "id": "379a3ad0-0f44-11ec-9f6f-37c79fa49013",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Tramore",
+      "latitude": 52.16235,
+      "longitude": -7.15244,
       "readings": [
         {
-          "id" : "02",
+          "id": "3cdad590-0f44-11ec-9f6f-37c79fa49013",
           "code": 800,
           "temperature": 0.5,
           "windSpeed": 3.5,
-          "pressure": 1002
+          "pressure": 1001,
+          "windDirection": 220,
+          "date": "2021-09-11T19:48:16.651Z"
         },
         {
-          "id" : "03",
+          "id": "336b48a0-122d-11ec-938b-47790c4df6ef",
           "code": 600,
           "temperature": 6,
           "windSpeed": 2,
-          "pressure": 1004
-        },
-        {
-          "id" : "04",
-          "code": 700,
-          "temperature": 8,
-          "windSpeed": 1,
-          "pressure": 1005
+          "pressure": 1004,
+          "windDirection": 200,
+          "date": "2021-09-11T19:48:16.651Z"
         }
       ]
     },
     {
-      "id" : "05",
-      "name": "Dunmore",
+      "id": "6e5b1ac0-13dc-11ec-89b1-f1e571c93198",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Springfield",
+      "latitude": 37.2153,
+      "longitude": -93.2982,
       "readings": [
         {
-          "id" : "06",
-          "code": 700,
-          "temperature": 8,
-          "windSpeed": 1,
-          "pressure": 999
-        },
+          "id": "927f4570-13dc-11ec-89b1-f1e571c93198",
+          "date": "2021-09-12T15:17:41.320Z",
+          "code": 100,
+          "temperature": 23.7,
+          "windSpeed": 4.5,
+          "windDirection": 255,
+          "pressure": 1020
+        }
+      ]
+
+    },
+    {
+      "id": "9b6ced30-13dd-11ec-89b1-f1e571c93198",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Dunmore",
+      "latitude": 52.1499,
+      "longitude": -6.9833,
+      "readings": [
         {
-          "id" : "07",
+          "id": "cc948b70-13dd-11ec-89b1-f1e571c93198",
+          "date": "2021-09-12T15:26:28.263Z",
           "code": 200,
           "temperature": 0.5,
           "windSpeed": 3.5,
+          "windDirection": 120,
+          "pressure": 999
+        },
+        {
+          "id": "e0fc6420-13dd-11ec-89b1-f1e571c93198",
+          "date": "2021-09-12T15:27:02.498Z",
+          "code": 700,
+          "temperature": 8,
+          "windSpeed": 1,
+          "windDirection": 90,
           "pressure": 1000
+        },
+        {
+          "id": "30c82ea0-13fa-11ec-a551-59e5538d44ab",
+          "date": "2021-09-12T18:49:42.282Z",
+          "code": 700,
+          "temperature": 10,
+          "windSpeed": 10,
+          "windDirection": 15,
+          "pressure": 1001
         }
       ]
+
     }
   ]
 }

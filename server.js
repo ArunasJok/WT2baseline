@@ -7,11 +7,12 @@ const cookieParser = require("cookie-parser");
 const fileUpload = require("express-fileupload");
 
 const app = express();
+
 app.use(cookieParser());
 const exphbs = require("express-handlebars");
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static("public"));
-app.use(fileUpload());
+app.use(fileUpload(1));
 app.engine(
     ".hbs",
     exphbs({
@@ -25,5 +26,5 @@ const routes = require("./routes");
 app.use("/", routes);
 
 const listener = app.listen(process.env.PORT || 4000, function () {
-  logger.info(`glitch-template-1 started on port ${listener.address().port}`);
+  logger.info(`WeatherTop2 website started on port ${listener.address().port}`);
 });

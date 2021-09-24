@@ -1,38 +1,9 @@
 {{> menu id="dashboard"}}
 
-{{#each stations}}
-  <section class="ui segment">
-    <h2 class="ui header">
-      {{name}}
-    </h2>
-    {{>lastreadings}}
-    <table class="ui table">
-      <thead>
-        <tr>
-          <th>Weather</th>
-          <th>Temp</th>
-          <th>Wind</th>
-          <th>Pressure</th>
-        </tr>
-      </thead>
-      <tbody>
-        {{#each readings}}
-          <tr>            
-            <td>
-              {{code}}
-            </td>
-            <td>
-              {{temperature}}
-            </td>
-            <td>
-              {{windSpeed}}
-            </td>
-            <td>
-              {{pressure}}
-            </td>
-          </tr>
-        {{/each}}
-      </tbody>
-    </table>
-  </section>
-{{/each}}
+<section class="ui segment">
+
+    {{> liststations}}
+    {{> addstation}}
+
+</section>
+<div class="ui segment" id="chart"></div>

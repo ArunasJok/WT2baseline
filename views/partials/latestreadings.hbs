@@ -1,12 +1,22 @@
+
 <div class="ui inverted five cards">
     <div class="ui blue raised link card">
         <div class="content">
             <div class="header">
-                {{name}}
+                {{station.name}}
                 <div class="right floated content">
                     <i class="blue map marked alternate icon" style="font-size: 2.5em;"></i>
                 </div>
-            </div>            
+            </div>
+            <span style="display:block; height: 60px;"></span>
+            <div class="header">
+                <div class="left floated content">
+                    Latitude {{latitudeRounded}}
+                </div>
+                <div class="left floated content">
+                    Longitude {{longitudeRounded}}
+                </div>
+            </div>
         </div>
     </div>
     <div class="ui blue raised link card">
@@ -21,7 +31,7 @@
                     <h3>
                         <div class="right aligned description">
                             <p>
-                                {{code}}
+                                {{weatherCode}}
                             </p>
                         </div>
                     </h3>
@@ -38,14 +48,14 @@
                 </span>
                 <h3>
                     <div class="right aligned description">
-                        ${_station.tempC} °C
+                        {{lastReport.temperature}} °C
                         <div>
-                            ${_station.tempF} °F
+                            {{tempF}} °F
                         </div>
                         <h4>
-                            Min: ${_station.minTempC} °C
+                            Min: {{minTemp.temperature}} °C
                             <div></div>
-                            Max: ${_station.maxTempC} °C
+                            Max: {{maxTemp.temperature}} °C
                         </h4>
                     </div>
                 </h3>
@@ -61,17 +71,20 @@
                         </span>
                 <h3>
                     <div class="right aligned description">
-                        ${_station.windBeaufort} bft
+                         {{windBeaufort}}bft
                     </div>
                     <div class="right aligned description">
-                        Feels like ${_station.windChill} °C
+                        {{windDirectionText}}
                     </div>
                     <div class="right aligned description">
-                        ${_station.windDirectionName}
+                        Feels like  {{windChill}}°C
+                    </div>
+                    <div class="right aligned description">
+
                         <h4>
-                            Min: ${_station.minWindSpeed}
+                            Min: {{minWind.windSpeed}}
                             <div></div>
-                            Max: ${_station.maxWindSpeed}
+                            Max: {{maxWind.windSpeed}}
                         </h4>
                     </div>
 
@@ -88,12 +101,12 @@
                 </span>
                 <h3>
                     <div class="right aligned description">
-                        ${_station.pressureNow}
-                        hpa
+
+                        {{lastReport.pressure}}hpa
                         <h4>
-                            Min: ${_station.minPressure}
+                            Min: {{minPressure.pressure}}
                             <div></div>
-                            Max: ${_station.maxPressure}
+                            Max: {{maxPressure.pressure}}
                         </h4>
                     </div>
                 </h3>

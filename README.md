@@ -1,4 +1,4 @@
-Welcome to the Playlist 1
+Welcome to the WeatherTop 2.0
 =========================
 
-Version 1 of the Playlist application
+Version 2 of the WeatherTop application

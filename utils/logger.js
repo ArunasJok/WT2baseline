@@ -3,8 +3,8 @@ const {combine, timestamp, label, prettyPrint} = format;
 
 const logger = createLogger({
   format: combine(
-      label({label: "Playlist"}),
-      //timestamp(),
+      label({label: "WeatherTop2"}),
+      //timestamp()
       prettyPrint()
   ),
   transports: [new transports.Console()]
